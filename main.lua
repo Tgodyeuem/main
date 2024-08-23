@@ -5176,7 +5176,7 @@ end)
         _G.AutoDarkDagger = Value
         saveSettings()
     end)
-     Auto Rip Indra = function() 
+    local function Auto Rip Indra()
         if CheckBoss("rip_indra True Form [Lv. 5000] [Raid Boss]") then
             return true 
         elseif not CheckBoss("rip_indra True Form [Lv. 5000] [Raid Boss]") then
@@ -5196,10 +5196,7 @@ end)
                         end 
                     end
                 end
-            end
-        end
-    end,  
-    Auto Rip Indra= function() 
+    local function Auto Rip Indra() 
         if CheckBoss("rip_indra True Form [Lv. 5000] [Raid Boss]") then
             repeat task.wait()
                 KillMobNotInWorkSpace(CheckBoss("rip_indra True Form [Lv. 5000] [Raid Boss]")) 
@@ -5220,7 +5217,7 @@ end)
                 end
             end
         end
-    end,
+    end
  Toggle = Tabs.stack:AddToggle("MyToggle", {Title = "Auto Dark Fragment", Default = _G.Auto_DarkBoss })
     Toggle:OnChanged(function(Value)
         _G.Auto_DarkBoss = Value
